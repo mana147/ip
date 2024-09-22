@@ -1,3 +1,0 @@
-113.168.35.229
-Lệnh 'git add' đã được thực thi thành công.
-Lỗi khi thực thi lệnh 'git commit'.
