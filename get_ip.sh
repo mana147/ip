@@ -5,7 +5,7 @@ ip=$(curl -s ipinfo.io/ip)
 d=$(date)
 
 # Ghi thông tin IP vào file ip.log, kèm dấu xuống dòng
-echo $ip + $d >> /root/ip/log.txt
+echo $ip - $d >> /root/ip/log.txt
 
 cd /root/ip
 # Thực hiện các lệnh Git
