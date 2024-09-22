@@ -7,7 +7,6 @@ ip=$(curl -s ipinfo.io/ip)
 echo $ip >> /home/nevermore/Project/ip/log.txt
 
 cd /home/nevermore/Project/ip
- 
 # Thực hiện các lệnh Git
 # Thực hiện git add -A và kiểm tra xem lệnh có thành công không
 if git --git-dir=.git add -A; then
@@ -18,7 +17,7 @@ else
 fi
 
 # Thực hiện git commit và kiểm tra xem lệnh có thành công không
-if  git --git-dir=.git commit -m "update"; then
+if git --git-dir=/home/nevermore/Project/ip/.git commit -m "update"; then
     echo "Lệnh 'git commit' đã được thực thi thành công." >> /home/nevermore/Project/ip/log.txt
 else
     echo "Lỗi khi thực thi lệnh 'git commit'." >> /home/nevermore/Project/ip/log.txt
